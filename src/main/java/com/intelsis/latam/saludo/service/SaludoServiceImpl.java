@@ -49,7 +49,6 @@ public class SaludoServiceImpl implements SaludoService {
 			
 	}
 	
-
 	private String geNombreDif(String nombre, int idxNombre) {
 		String nombreSolicitado = null;
 		
@@ -76,10 +75,6 @@ public class SaludoServiceImpl implements SaludoService {
 		}
 		return nombreSolicitado;
 	}
-
-
-
-
 
 
 	private PoemaSaludo getSaludo(String nombre, Date fechaNacimiento ) {
