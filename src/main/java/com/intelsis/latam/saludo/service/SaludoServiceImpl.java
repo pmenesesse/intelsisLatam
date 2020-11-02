@@ -28,7 +28,6 @@ public class SaludoServiceImpl implements SaludoService {
 	private static final String ESPACIO = " ";
 
 	private static final String DF_CUMPLEANIOS = "dd-MM";
-	private static final String DF_CUMPLEANIOS_DIAS = "dd-MM-yyyy";
 	
 	@Value("${service-poemist.url}")
 	private String poemist;
@@ -50,7 +49,6 @@ public class SaludoServiceImpl implements SaludoService {
 			
 	}
 	
-
 	private String geNombreDif(String nombre, int idxNombre) {
 		String nombreSolicitado = null;
 		
@@ -77,10 +75,6 @@ public class SaludoServiceImpl implements SaludoService {
 		}
 		return nombreSolicitado;
 	}
-
-
-
-
 
 
 	private PoemaSaludo getSaludo(String nombre, Date fechaNacimiento ) {
@@ -143,12 +137,10 @@ public class SaludoServiceImpl implements SaludoService {
 			Calendar calNacimiento = Calendar.getInstance();
 			Calendar Actualidad = Calendar.getInstance();
 	        calNacimiento.setTime(fechaNacimiento);
-	        
-	        
+
 	        Integer anioNacimiento = calNacimiento.get(Calendar.YEAR);
 			Integer mesNacimiento = calNacimiento.get(Calendar.MONTH);
 			Integer diaNacimiento = calNacimiento.get(Calendar.DAY_OF_MONTH);
-
 			Integer anioActual = Actualidad.get(Calendar.YEAR);
 			Integer mesActual = Actualidad.get(Calendar.MONTH);
 			Integer diaActual = Actualidad.get(Calendar.DAY_OF_MONTH);
