@@ -10,7 +10,6 @@ public class InfoCliente implements Serializable{
 	private String primerNombre;
 	private String apellidos;
 	private Integer edad;
-	private Integer difNacimiento;
 	
 	private PoemaSaludo poemaSaludo;
 	
@@ -31,12 +30,6 @@ public class InfoCliente implements Serializable{
 	}
 	public void setEdad(Integer edad) {
 		this.edad = edad;
-	}
-	public Integer getDifNacimiento() {
-		return difNacimiento;
-	}
-	public void setDifNacimiento(Integer difNacimiento) {
-		this.difNacimiento = difNacimiento;
 	}
 
 	public PoemaSaludo getPoemaSaludo() {
